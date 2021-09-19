@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.layout {
+  grid-template-rows: 9rem 1fr 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    grid-template-rows: 3rem 1fr 3rem;
+  }
+}
