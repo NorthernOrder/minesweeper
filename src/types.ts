@@ -16,8 +16,7 @@ export interface Point {
 }
 
 export interface Cell {
-  id: string;
-  idx: number;
+  id: number;
   pos: Point;
   type: CellType;
   number?: number;
@@ -30,7 +29,7 @@ export type Cells = Cell[];
 export interface Board {
   cells: Cells;
   size: Point;
-  bombs: number[];
+  bombs: number;
   first: boolean;
   left: number;
   state: State;
